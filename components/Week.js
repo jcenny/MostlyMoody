@@ -36,7 +36,7 @@ export default function Week(props) {
     <View style={styles.container}>
       <View style={styles.moodContainer}>
         {week.map((item) => (
-          <Button color="#fff" padding={20} title={` ${item.mood} `} />
+          <Button key={`mood: ${item.day}`} color="#fff" padding={20} title={` ${item.mood} `} />
         ))}
       </View>
       <Svg width={SVGWidth} height={SVGHeight}>
